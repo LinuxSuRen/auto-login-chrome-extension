@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Login Reward",
+  "version": "1.0",
+  "description": "Automatically clicks the login reward button on V2EX.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.v2ex.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
